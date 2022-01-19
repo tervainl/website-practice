@@ -6,12 +6,48 @@
 }
 
 .background {
-  width: 100%;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   height: 100vh;
-  position: relative;
+}
+
+.fullPage {
+  height: 100vh;
+  width: 100%;
   background-color: black;
+  scroll-snap-align: start;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  opacity: 60%;
+}
+
+#home {
+  background-image: url(../image/homeBackground.jpg);
+}
+#about {
+  background-image: url(../image/aboutBackground.jpg);
+}
+#service {
+  background-image: url(../image/serviceBackground.jpg);
+}
+#project {
+  background-image: url(../image/projectBackground.jpg);
+}
+#kriging {
+  display: flex;
+}
+#recruit {
+  background-image: url(../image/recruitBackground.jpg);
+}
+#contact {
+  background-image: url(../image/contactBackground.jpg);
 }
 
 .logo {
   width: 2rem;
+}
+
+#map {
+  width: 100%;
 }
