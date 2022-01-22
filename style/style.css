@@ -42,10 +42,15 @@
   background-image: url(../image/projectBackground.jpg);
 }
 
-#kriging {
+#rainfall {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+#rainfall #map {
+  width: 100%;
+  top: 60px;
 }
 
 #recruit {
@@ -60,7 +65,23 @@
   width: 2rem;
 }
 
-#map {
-  width: 100%;
+.star {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.easy-button-button.disabled {
+  display: none;
+}
+
+.my-div-icon {
+  size: 2rem;
+  background: #0004ff;
+  border: 2px solid rgba(0, 0, 0, 0.575);
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px;
 }
 /*# sourceMappingURL=style.css.map */

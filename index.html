@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./image/LOGO.png" />
     <title>首潤工程顧問股份有限公司</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,9 +18,18 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style/style.css" />
+    <!-- leaflet -->
     <link rel="stylesheet" href="./node_modules/leaflet/dist/leaflet.css" />
     <script src="./node_modules/leaflet/dist/leaflet.js"></script>
+    <!-- turf -->
+    <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
+    <!-- eazyButtom -->
+    <link
+      rel="stylesheet"
+      href="./node_modules/leaflet-easybutton/src/easy-button.css"
+    />
+    <script src="./node_modules/leaflet-easybutton/src/easy-button.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <!-- navbar -->
@@ -69,7 +79,7 @@
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#kriging">克利金法估計降雨</a>
+                  <a class="dropdown-item" href="#rainfall">即時降雨</a>
                 </li>
                 <li><a class="dropdown-item" href="#">coming soon</a></li>
               </ul>
@@ -90,9 +100,13 @@
       <section class="fullPage" id="home"></section>
       <section class="fullPage" id="about"></section>
       <section class="fullPage" id="service"></section>
-      <section class="fullPage" id="project"></section>
-      <!-- 克利金雨量地圖 -->
-      <section class="fullPage" id="kriging">
+      <!-- 過往計畫 -->
+      <section class="fullPage" id="project">
+        <div class="cardContainer"></div>
+      </section>
+
+      <!-- 即時雨量地圖 -->
+      <section class="fullPage" id="rainfall">
         <div id="map"></div>
       </section>
       <section class="fullPage" id="recruit"></section>
