@@ -1,17 +1,12 @@
-# engineering-consultant-website
+# 公司網頁(練習)
 
-it's a practice for learning
-trying to build a website of an engineering consultant company
+## Demo
 
+- 2021/1/23
+  - html/css/javascript 撰寫基本的靜態網頁
+  - 建立地圖工具及興趣點儲存功能
+  - 新增中央氣象局即時降雨資料圖層
 
+## 專案起源
 
-
-+ 2021/1/23 
-  + Build a website with html/css/javascript
-  + Get rainfall data from Central Weather Bureau API
-  + Build a map tool with leaflet, can save point of interest and show real-Time rainfall data   
-  
-next
-
-+ use framework rebuild website (react or Angular)
-+ 
+在學習網頁開發的過程中，希望透過實際的案例來練習，便以過往在水利工程顧問公司工作的經驗中發想，練習打造一個符合實際需求的公司網頁。另外因水利工程在近年引入了許多新科技，如各種感測器物聯網，或是即時資料的分析及預測模型，以往透過報告書呈現資料的方式已不符需求，因此也在網站內架設地圖工具，便於展示如即時雨量或模型分析之成果。

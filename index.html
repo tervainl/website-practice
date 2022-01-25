@@ -4,14 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="./image/LOGO.png" />
+    <link rel="icon" href="./image/SREC-LOGO.png" />
     <title>首潤工程顧問股份有限公司</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300&display=swap" rel="stylesheet"> 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -44,12 +43,12 @@
   <body>
     <!-- navbar -->
     <nav
-      class="navbar navbar-expand-sm navbar-light fixed-top"
+      class="navbar navbar-expand-md navbar-light fixed-top navbar-custom"
       style="background-color: #e3f2fd"
     >
       <div class="container-fluid">
         <a class="navbar-brand" href="./index.html">
-          <img class="logo" src="./image/LOGO.png" alt="logo" />
+          <img class="logo" src="./image/SREC-LOGO.png" alt="logo" />
           首潤工程顧問股份有限公司</a
         >
         <button
@@ -107,19 +106,233 @@
 
     <div class="background">
       <!-- homepage -->
-      <section class="fullPage" id="home"></section>
-      <section class="fullPage" id="about"></section>
-      <section class="fullPage" id="service"></section>
+      <section class="fullPage" id="home">
+        <div class="cardContainer">
+          <!-- card   -->
+          <H1 class="text-black">NEWS</H1>
+          <!-- card 1 -->
+          <div class="card">
+            <h5 class="card-header">[更新]網站更新 - 2021/01/14</h4>
+            <div class="card-body">
+              <h4 class="card-title">更新網頁文字內容</h4>
+              <p class="card-text"></p>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card" ">
+            <h5 class="card-header">[新功能]即時降雨資料 - 2021/01/23</h4>
+            <div class="card-body">
+              <h4 class="card-title ">更新地圖工具與即時降雨圖層</h4>
+              <p class="card-text">新增興趣點儲存功能
+                <br>
+                底圖：台灣通用電子地圖、正射影向(通用)、正射影向(混和)、mapbox
+                <br>
+                累計降雨：10min, 1hr, 3hr, 6hr, 12hr, 24hr, 1日, 2日, 3日
+                <br>
+                資料來源：<a href="">政府資料開放平台 - 自動雨量站雨量觀測資料</a></p>
+              <a href="#rainfall" class="btn btn-primary">try it</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- about -->
+      <section class="fullPage" id="about">
+        <div class="card mb-3" style="max-width: 1500px;">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="./image/SREC-LOGO.png" class="img-fluid rounded-start" alt="logo">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h4 class="card-title">關於首潤</h4>
+                <p class="card-text">&emsp;&emsp;首潤工程顧問股份有限公司（SREC, Inc.）結合傳統水利工程及新創物聯網與人工智慧，致力於類神經網路及專家系統與水資源物聯網之融合應用，亦秉持水利工程知識領域專業以及造福人民生命財產安全之使命，始終謙虛但充滿信心的立足於工程顧問業。
+                  <br>&emsp;&emsp;我們重視且珍惜每一位同仁，誠心將員工視為公司寶貴的資產。除了有令人愉悅的工作環境、提供學習及成長的空間、彈性上下班的自由，歡迎優秀的朋友一起加入首潤工程顧問股份有限公司的工作行列。<br>
+                  </p>
+                  <h4 class="card-title">經營理念</h4>
+                  <p>
+                    &emsp;&emsp;首潤結合物聯網電信技術及水利工程專業，秉持「首要之務，潤澤於民」之精神，以專業道德、社會責任及永續經營為主要核心價值，期以專業技術及換位思考之服務態度，提供業主完整之專業服務。</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 服務項目 -->      
+      <section class="fullPage" id="service">
+        <div class="card mb-3" style="max-width: 700px;">
+          <div class="row g-0">            
+            <div class="card-body">
+              <h4 class="card-title">服務項目</h4>
+              <p class="card-text">結合傳統水利工程及新創物聯網與人工智慧，致力於類神經網路及專家系統與水資源物聯網之融合應用，亦秉持水利工程知識領域專業如地下水、河川排水、山坡地野溪、水資源調配、水庫堰壩、堤防護岸、雨水下水道、滯洪設施、鐵公路排水及低衝擊開發設施等之研究、調查、規劃、設計及模擬分析。</p>
+            </div>            
+          </div>
+        </div>
+      </section>
+
       <!-- 過往計畫 -->
       <section class="fullPage" id="project">
-        <div class="cardContainer"></div>
+        <div class="carouselContainer">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./image/JinShan.png" class="d-block w-100" alt="jingshan">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>新北市管區域排水金山清水溪排水治理規劃</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./image/DaHan.png" class="d-block w-100" alt="dahan">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4 class="text-dark">淡水河水系大漢溪治理計畫</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./image/WuGu.png" class="d-block w-100" alt="wugu">
+                <div class="carousel-caption d-none d-md-block">
+                  <h4>北市管區域排水五股坑溪排水及御史坑溪排水治理規劃</h4>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <div class="projectTable">
+            <h4>河川排水治理規劃</h4>
+            <ul>
+              <li>臺南市管區域排水桔子溪排水系統規劃及治理計畫</li>
+              <li>高雄市管區域排水楠梓排水治理計畫</li>
+              <li>淡水河水系大漢溪治理計畫（由石門水庫後池堰起至三峽河匯流口止）(斷面77-80局部修正檢討)</li>
+              <li>新北市管區域排水金山清水溪排水治理規劃</li>
+              <li>新北市管區域排水五股坑溪排水及御史坑溪排水治理規劃</li>
+              <li>新北市市管河川瑪鋉溪水系治理規劃</li>
+              <li>高雄市鳳山區等3區淹水規劃檢討委託技術服務</li>
+              <li>高雄市大社區中里排水規劃檢討委託技術服務案</li>
+            </ul>
+
+            <h4>雨水下水道治理規劃</h5>
+            <ul>                
+              <li>臺南市七股區雨水下水道系統規劃</li>
+              <li>阿蓮區雨水下水道系統檢討規劃</li>
+              <li>高雄市大社區雨水下水道系統檢討規劃</li>
+              <li>花蓮縣新城鄉民有街雨水下水道工程委託技術服務規劃設計監造</li>
+            </ul>
+
+            <h4>水利建造物安全規劃及檢查</h4>
+            <ul>
+              <li>水利建造物安全檢查委託服務工作(花蓮縣)</li>
+              <li>區域排水設施結構安全檢測計畫委辦計畫</li>
+              <li>淡水河水系防水建造物安全監控系統建置先期規劃</li>
+            </ul>
+
+            <h4>智慧地下水管理</h4>
+            <ul>
+              <li>桃園市溫泉智慧流量管理委託專業服務案</li>
+            </ul>
+
+            <h4>其它公共工程計畫</h4> 
+            <ul>
+              <li>110年度淡水河流域監測設備採購計畫</li>
+              <li>峨眉湖環湖步道暨周邊公共服務設施改善工程委託規劃設計及監造</li>
+              <li>地震動能即時模擬波高系統建置</li>
+            </ul>
+          </div>
+
+        </div>
+        
       </section>
 
       <!-- 即時雨量地圖 -->
       <section class="fullPage" id="rainfall">
-        <div id="map"></div>
+        <div id="map">
+        </div>
       </section>
-      <section class="fullPage" id="recruit"></section>
+      <section class="fullPage" id="recruit">
+        <div class="cardContainer">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">水利工程師</h4>
+                  <ol>
+                    <li>水文與水理分析</li>
+                    <li>水文與水理規劃與執行</li>
+                    <li>水利工程計劃管理</li>
+                    <li>水利工程設計</li>
+                    <li>水資源規劃、執行、與管理</li>
+                    <li>計畫管理相關工作</li>
+                  </ol>
+                  <h5>工作內容</h5>
+                  <p>身份類別：不拘<br>
+                    工作經驗：1年以上工作經驗<br>
+                    學歷限制：大學、碩士<br>
+                    科系限制：土木工程及水利學類<br>
+                    語言能力：中文 聽-精通 | 說-精通 | 讀-精通 | 寫-精通<br>
+                    方言能力：台語 中等<br>
+                    電腦專長：Word/Excel/PowerPoint/Windows 10/Python/AutoCAD/GIS<br>
+                    駕照車輛：普通小型車 駕照</p>
+                  <h5>附加條件（非必要）：</h5>
+                  <ol>
+                    <li>具雨水下水道規劃經驗者佳</li>
+                    <li>具遙控無人機操作證及相關操作經驗者佳</li>
+                  </ol>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">專案管理專員</h4>
+                  <ol>
+
+                    資訊系統、軟體開發管理
+                    委外承包管理
+                    客戶關係管理
+                    政府公開招標計畫管理
+    
+
+
+                  </ol>
+                  <h5>工作內容</h5>
+                  <p>身份類別：一般求職者<br>
+                    工作經驗：3年以上工作經驗<br>
+                    學歷限制：大學、碩士<br>
+                    科系限制：不限<br>
+                    語言能力：中文 聽-精通 | 說-精通 | 讀-精通 | 寫-精通<br>
+                    方言能力：台語 略通<br>
+                    電腦專長：Word/ Excel/ PowerPoint/ Project/ Visio/ XMind6/ Android/ IOS/ Windows 10/ JAVA/ JSP/ ASP.NET/ C#.NET/ PHP/ HTTP/ Python/ MS/ SQL/ MySQL/ HTML<br>
+                    駕照車輛：普通小型車 駕照<br>
+                    
+
+
+                  </p>
+                  <h5>附加條件（非必要）：</h5>
+                  <ol>
+                    <li> 具網站/App開發管理經驗者佳</li>
+                    <li> 熟悉軟體系統開發流程(SDLC)佳</li>
+                    <li> 1~3年經驗者均可</li>
+                    <li> 能妥善管理需求(requirements)面與執行(implementations)面者佳</li>
+                    <li> 細心、有耐心、善溝通者優先考慮</li>                
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
       <section class="fullPage" id="contact"></section>
     </div>
   </body>

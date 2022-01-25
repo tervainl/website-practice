@@ -84,8 +84,10 @@ myViewListArray.forEach((view, i) => {
 // set point of interest and save in localStorage
 const setPointOfInterest = () => {
   let viewName = prompt("請替當前圖框命名");
-  if (viewName == "") {
+  if (viewName === "") {
     alert("請輸入名稱");
+    return;
+  } else if (viewName === null) {
     return;
   }
 

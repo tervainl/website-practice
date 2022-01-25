@@ -4,6 +4,14 @@
   box-sizing: border-box;
   font-family: "Noto Sans TC", sans-serif;
 }
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0 1rem;
+}
 
 .background {
   scroll-snap-type: y mandatory;
@@ -12,32 +20,88 @@
 }
 
 .fullPage {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: black;
   scroll-snap-align: start;
   display: flex;
   background-size: cover;
   background-position: center;
-  opacity: 60%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardContainer {
+  padding: 5rem;
+  border-radius: 1rem;
 }
 
 #home {
   background-image: url(../image/homeBackground.jpg);
+  .card {
+    margin: 1rem;
+  }
 }
+
 #about {
   background-image: url(../image/aboutBackground.jpg);
+  .card {
+    background-color: rgba(186, 225, 248, 0.85);
+    padding: 3rem;
+    border-radius: 1rem;
+  }
 }
 #service {
   background-image: url(../image/serviceBackground.jpg);
+  .card {
+    background-color: rgba(186, 225, 248, 0.85);
+    border-radius: 1rem;
+    padding: 3rem;
+  }
 }
 #project {
-  background-image: url(../image/projectBackground.jpg);
+  background-image: linear-gradient(
+      rgba(189, 189, 255, 0.5),
+      rgba(164, 255, 255, 0.199)
+    ),
+    url(../image/projectBackground.jpg);
+  background-color: rgb(181, 243, 245);
+}
+
+.carouselContainer {
+  width: 100%;
+  height: 90vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.carousel {
+  width: 75vw;
+  img {
+    border-radius: 1rem;
+  }
+}
+
+.projectTable {
+  width: 20vw;
+  height: 80vh;
+  border-radius: 1rem;
+  background-color: rgba(214, 214, 214, 0.89);
+  overflow-y: scroll;
+  h4 {
+    margin: 2rem 0 0 3rem;
+  }
+  li {
+    margin-left: 3rem;
+    font-size: 1.25rem;
+  }
 }
 
 #rainfall {
-  display: flex;
   #map {
+    height: 100vh;
     width: 100%;
     top: 60px;
   }
@@ -45,6 +109,11 @@
 
 #recruit {
   background-image: url(../image/recruitBackground.jpg);
+  .card {
+    background-color: rgba(186, 225, 248, 0.85);
+    border-radius: 1rem;
+    padding: 3rem;
+  }
 }
 #contact {
   background-image: url(../image/contactBackground.jpg);
@@ -72,4 +141,27 @@
   text-align: center;
   border-radius: 50%;
   line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #about img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .carouselContainer {
+    flex-direction: column;
+    justify-content: space-around;
+    .carousel {
+      width: 85%;
+      h4 {
+        font-size: 1.5rem;
+      }
+    }
+    .projectTable {
+      width: 90vw;
+      margin: 2.5vh;
+    }
+  }
 }

@@ -6,6 +6,15 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
 .background {
   -ms-scroll-snap-type: y mandatory;
       scroll-snap-type: y mandatory;
@@ -14,7 +23,7 @@
 }
 
 .fullPage {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
   background-color: black;
   scroll-snap-align: start;
@@ -23,38 +32,106 @@
   display: flex;
   background-size: cover;
   background-position: center;
-  opacity: 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cardContainer {
+  padding: 5rem;
+  border-radius: 1rem;
 }
 
 #home {
   background-image: url(../image/homeBackground.jpg);
 }
 
+#home .card {
+  margin: 1rem;
+}
+
 #about {
   background-image: url(../image/aboutBackground.jpg);
+}
+
+#about .card {
+  background-color: rgba(186, 225, 248, 0.85);
+  padding: 3rem;
+  border-radius: 1rem;
 }
 
 #service {
   background-image: url(../image/serviceBackground.jpg);
 }
 
-#project {
-  background-image: url(../image/projectBackground.jpg);
+#service .card {
+  background-color: rgba(186, 225, 248, 0.85);
+  border-radius: 1rem;
+  padding: 3rem;
 }
 
-#rainfall {
+#project {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(189, 189, 255, 0.5)), to(rgba(164, 255, 255, 0.199))), url(../image/projectBackground.jpg);
+  background-image: linear-gradient(rgba(189, 189, 255, 0.5), rgba(164, 255, 255, 0.199)), url(../image/projectBackground.jpg);
+  background-color: #b5f3f5;
+}
+
+.carouselContainer {
+  width: 100%;
+  height: 90vh;
+  margin-top: 5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.carousel {
+  width: 75vw;
+}
+
+.carousel img {
+  border-radius: 1rem;
+}
+
+.projectTable {
+  width: 20vw;
+  height: 80vh;
+  border-radius: 1rem;
+  background-color: rgba(214, 214, 214, 0.89);
+  overflow-y: scroll;
+}
+
+.projectTable h4 {
+  margin: 2rem 0 0 3rem;
+}
+
+.projectTable li {
+  margin-left: 3rem;
+  font-size: 1.25rem;
 }
 
 #rainfall #map {
+  height: 100vh;
   width: 100%;
   top: 60px;
 }
 
 #recruit {
   background-image: url(../image/recruitBackground.jpg);
+}
+
+#recruit .card {
+  background-color: rgba(186, 225, 248, 0.85);
+  border-radius: 1rem;
+  padding: 3rem;
 }
 
 #contact {
@@ -83,5 +160,32 @@
   text-align: center;
   border-radius: 50%;
   line-height: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  #about img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .carouselContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .carouselContainer .carousel {
+    width: 85%;
+  }
+  .carouselContainer .carousel h4 {
+    font-size: 1.5rem;
+  }
+  .carouselContainer .projectTable {
+    width: 90vw;
+    margin: 2.5vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
