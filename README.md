@@ -14,6 +14,8 @@
 
 ## 應用
   - html/css/javascript 
+  - Sass
+  - npm
   - bootstrap
   - leaflet地圖工具、Leaflet.EasyButton
   - 接入[中央氣象局即時降雨資料](https://data.gov.tw/dataset/9177)API
